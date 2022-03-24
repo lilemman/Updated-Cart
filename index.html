@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/34a51897c7.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body style="background-image: url('./Images/jason-dent-S53ekmu8KkE-unsplash.jpg');" class="background">
+    <div class='container'>
+      <h1 class='text-center'>Programming Book Library</h1><br>
+      <div class='col-12'>
+        <table class='table table-responsive' id='cart'>
+          <thead class='bg-success'>
+            <tr>
+              <th scope='col'>Books</th>
+              <th scope='col'> Price</th>
+              <th scope='col'>Quantity</th>
+              <th scope='col'>Books Cost</th>
+              <th scope='col'></th>
+             
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class='item'>Intro to JavaScript</td>
+              <td class='price'>73.00</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-warning remove'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item'>Wed development foundation with HTML,CSS & JAVASCRIPT</td>
+              <td class='price'>55.50</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-warning remove'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item'>CSS & Bootstrap Mastery </td>
+              <td class='price'>51.80</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-warning remove'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item'>Front end Development </td>
+              <td class='price'>75.95</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-warning remove'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item'>Full Stack development course Book</td>
+              <td class='price'>115</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost'></td>
+              <td><button class='btn btn-warning remove'><i>Remove</i></button></td>
+            </tr>
+            <tr id='newList'>
+              <td><input class='form-control input-sm' type='text' id='item' placeholder='new item'></input></td>
+              <td><input class='form-control input-sm' type='number' style="width: 75px;" id='price' placeholder='price'></input></td>
+              <td colspan='2'></td>
+              <td><button class='btn btn-warning add'>Add</button></td>
+            </tr>
+          </tbody>
+          <tfoot style='font-weight: bold' class='bg-warning'>
+            <tr>
+              <td colspan='3' class="tcost">TOTAL BOOKS COST</td>
+              <td id='itemTotal'></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

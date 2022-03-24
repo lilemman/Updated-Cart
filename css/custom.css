@@ -1,0 +1,28 @@
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+  }
+
+  tr,td{
+font-weight: 600;
+font-size: large;
+  }
+td{
+    color: black;
+}
+#itemTotal,.tcost{
+    color: black;
+}
+  #price,
+.add {
+  width: 50px;
+  text-align: center;
+}
+
+#item {
+  max-width: 200px;
+}
+
